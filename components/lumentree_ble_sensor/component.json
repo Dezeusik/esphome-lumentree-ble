@@ -1,0 +1,11 @@
+{
+  "name": "Lumentree BLE Sensor",
+  "files": [
+    "sensor.h",
+    "sensor.cpp"
+  ],
+  "dependencies": [
+    "esphome",
+    "ble_client"
+  ]
+}
