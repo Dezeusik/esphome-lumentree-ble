@@ -25,10 +25,9 @@ void LumentreeBLESensor::on_notify(uint16_t handle, std::vector<uint8_t> &data) 
   for (int i = 0; i < 16; i++)
     regs[i] = (data[3 + i * 2] << 8) | data[3 + i * 2 + 1];
 
-  // Przykład dekodowania – popraw wg własnej mapy rejestrów!
-  float voltage = regs[1] / 10.0f;   // rejestr 2
-  float current = regs[2] / 100.0f;  // rejestr 3
-  float power   = regs[3];           // rejestr 4
+  float voltage = regs[1] / 10.0f;
+  float current = regs[2] / 100.0f;
+  float power   = regs[3];
 
   if (voltage_sensor) voltage_sensor->publish_state(voltage);
   if (current_sensor) current_sensor->publish_state(current);
