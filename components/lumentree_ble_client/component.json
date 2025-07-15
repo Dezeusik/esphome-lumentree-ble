@@ -1,0 +1,8 @@
+{
+  "name": "Lumentree BLE Client",
+  "files": [
+    "hub.h",
+    "hub.cpp"
+  ],
+  "dependencies": ["esphome", "ble_client"]
+}

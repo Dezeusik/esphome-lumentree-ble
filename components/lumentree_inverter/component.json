@@ -1,0 +1,11 @@
+{
+  "name": "Lumentree Inverter Sensor",
+  "files": [
+    "sensor.h",
+    "sensor.cpp"
+  ],
+  "dependencies": [
+    "esphome",
+    "lumentree_ble_client"
+  ]
+}
